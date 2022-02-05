@@ -33,7 +33,7 @@ It will take some time installing the required image for first time (or later if
 ### Available scripts
 
 + deno
-+ go
++ golang
 + jenkins
 + node
 + python
