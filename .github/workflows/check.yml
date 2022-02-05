@@ -1,0 +1,19 @@
+name: Test if packages and list match in README
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+  workflow_dispatch:
+  
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compare
+        run: if [[ $(cat README.md | awk '/^\+/{print $2}') == $(ls packages) ]]; then exit 0; else exit 1; fi

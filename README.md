@@ -32,10 +32,10 @@ It will take some time installing the required image for first time (or later if
 
 ### Available scripts
 
-- deno
-- golang
-- jenkins
-- node
-- python
++ deno
++ go
++ jenkins
++ node
++ python
 
 Feel free to add a new script and open a new Pull Request.
