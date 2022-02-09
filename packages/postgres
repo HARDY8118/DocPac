@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker network create some-network
+docker run --name some-postgres --network some-network -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e PGDATA=/var/lib/postgres/data -v /var/lib/postgres/data:/var/lib/postgres/data -p 5432:5432 postgres

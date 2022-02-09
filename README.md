@@ -37,6 +37,9 @@ It will take some time installing the required image for first time (or later if
 + jenkins
 + neo4j
 + node
++ postgres
++ psql
 + python
++ sonarqube
 
 Feel free to add a new script and open a new Pull Request.
